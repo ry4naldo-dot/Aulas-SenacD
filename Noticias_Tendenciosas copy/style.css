@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* .logo {
+  text-align: center;
+  margin: 20px 0;
+} */
+
+.logo img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sccp:hover {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.gre:hover {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.recopa:hover {
+  transform: scale(1.07);
+  filter: brightness(0.7);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: #f1c40f;
+  font-size: 2.5rem;
+  padding: 195px;
+}
+
+.navbar a {
+  text-align: center;
+  line-height: 2.5;
+  letter-spacing: 0.2rem;
+  color: #f1c40f;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.sociais {
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  background-color: #5f9ea0;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.sociais img {
+  width: 1.2rem;
+  border-radius: 8px;
+}
+
+.sociais a:hover {
+  color: #fff;
+}
+
+.esportes,
+.brasils,
+.mundos,
+.final {
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+.brasils h2,
+.mundos h2 {
+  color: #fff;
+}
+
+.contatar{
+
+  text-align: center;
+
+}
+
+h6 {
+  font-size: 0.2rem;
+  background-color: #222;
+}
+
+.esportes {
+  background-color: #f5deb3;
+}
+
+.brasils {
+  background-color: #5f9ea0;
+  color: #fff;
+}
+
+.mundos {
+  background-color: #d2691e;
+  color: #fff;
+}
+
+.final {
+  background-color: #fff;
+}
+
+h1 {
+  background-color: #222;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.imagens {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.imagens img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.frame {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
+  padding: 20px;
+  background-color: #222;
+  color: #f1c40f;
+}
