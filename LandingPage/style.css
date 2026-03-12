@@ -21,9 +21,7 @@
   grid-area: header;
 }
 
-.informacoes {
-  grid-area: sidebar;
-}
+.informacoes,
 .programacao {
   grid-area: sidebar;
   grid-template-rows: auto;
