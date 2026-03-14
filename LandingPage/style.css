@@ -5,8 +5,15 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
+section{
+
+  margin: 20px;
+
+}
+
 body {
-  background: linear-gradient(180deg, #3a0ca3, #7209b7);
+  background: linear-gradient(180deg, #3a0ca3, #7209b7); 
+  /* background-image: url(Banner.png); */
   color: #fff;
 }
 
@@ -14,7 +21,7 @@ body {
   grid-area: header;
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(90deg, #560bad, #b5179e);
+  /* background: linear-gradient(90deg, #560bad, #b5179e); */
 }
 
 .banner h1 {
@@ -42,26 +49,40 @@ body {
 }
 
 .programacao {
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 20px;
+  padding: 20px;
   background-color: rgba(255, 255, 255, 0.05);
   border-left: 5px solid #4cc9f0;
 }
 
 .programacao h2 {
+  grid-column: 1 / -1;
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #90f1ef;
 }
 
-.programacao ul {
-  list-style: disc;
-} 
+.programacao img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #f72585;
+}
 
-.programacao li {
-  margin: 10px 0;
-  padding: 10px;
+.programacao ul {
+  /* list-style-type: none; */
+  margin: 0;
+  padding: 0;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
+}
+
+.programacao li {
+  padding: 10px;
+  /* border-bottom: 1px solid rgba(255,255,255,0.2); */
 }
 
 .galeria {
@@ -79,7 +100,7 @@ body {
 
 .galeria img {
   width: 200px;
-  height: auto;
+  height: 150px;
   margin: 10px;
   border-radius: 10px;
   border: 3px solid #f72585;
