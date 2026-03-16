@@ -1,2 +1,1 @@
-Nesses arquivos html contém todos os Itens exigidos em aula como: navbar, home, 6 artigos(ou article), sobre, contato e footer
-Feito por Ryan Gabriel da Rosa
+Nesse Repositorio existe somente Material de aulas/aulas e aulas praticas feito em sala de aula no modulo D 
