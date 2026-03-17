@@ -21,7 +21,7 @@ body {
   grid-area: header;
   text-align: center;
   padding: 40px 20px;
-  /* background: linear-gradient(90deg, #560bad, #b5179e); */
+  background: linear-gradient(90deg, #560bad, #b5179e);
 }
 
 .banner h1 {
