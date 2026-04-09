@@ -4,51 +4,264 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bugio's Market</title>
   </head>
-  <body class="bg-gray-400">
-    <!-- <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1> -->
-    <nav class="flex justify-between items-center p-4 bg-lime-600 text-white">
-        <div class="text-xl font-bold">Bugio's market</div>
-        <ul class="flex space-x-6">
-            <li class="hover:text-orange-300 cursor-pointer"><a href="#veiculos">Veículos</a></li>
-            <li class="hover:text-orange-300 cursor-pointer"><a href="#tecnologia">Tecnologia</a></li>
-            <li class="hover:text-orange-300 cursor-pointer"><a href="#ferramentas">Ferramentas</a></li>
-            <li class="hover:text-orange-300 cursor-pointer"><a href="#casaMoveis">Casa e Móveis</a></li>
-            <li class="hover:text-orange-300"><a href="#esportes">Esportes</a></li>
-        </ul>
+  <body class="bg-gray-100 font-sans">
+    <nav
+      class="flex justify-between items-center p-4 bg-lime-600 text-white shadow-md"
+    >
+      <div class="text-2xl font-extrabold tracking-wide">Bugio's Market</div>
+      <ul class="flex space-x-6">
+        <li>
+          <a href="#veiculos" class="hover:text-orange-300 transition"
+            >Veículos</a
+          >
+        </li>
+        <li>
+          <a href="#tecnologia" class="hover:text-orange-300 transition"
+            >Tecnologia</a
+          >
+        </li>
+        <li>
+          <a href="#ferramentas" class="hover:text-orange-300 transition"
+            >Ferramentas</a
+          >
+        </li>
+        <li>
+          <a href="#casaMoveis" class="hover:text-orange-300 transition"
+            >Casa e Móveis</a
+          >
+        </li>
+        <li>
+          <a href="#esportes" class="hover:text-orange-300 transition"
+            >Esportes</a
+          >
+        </li>
+      </ul>
     </nav>
-<!-- 
-    <div class="w-screen mb-14">
-      <img src="bugio.png" alt="">
+
+    <!-- <div class="w-full h-64 bg-cover bg-center mb-10" style="background-image: url('bugio.png');">
+      <div class="flex items-center justify-center h-full bg-black bg-opacity-40">
+        <h1 class="text-white text-4xl font-bold">Bem-vindo ao Bugio's Market</h1>
+      </div>
     </div> -->
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-5">
-      <div class="bg-white" w-78 h-68 rounded-lg flex items-enter justify-center>teste</div>
-      <div class="bg-white" w-78 h-68 rounded-lg flex items-enter justify-center>teste</div>
-      <div class="bg-white" w-78 h-68 rounded-lg flex items-enter justify-center>teste</div>
-      <div class="bg-white" w-78 h-68 rounded-lg flex items-enter justify-center>teste</div>
-    </div>
+    <!-- <div>
+      <img src="Bugio3.png" alt="" class="w-full h-screen">
+    </div>  -->
 
-    <article class="bg-orange-300">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-5">
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 1</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 2</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 3</div>
-        <div class="bg-lime-600 text-white w-78 h-68 rounded-lg flex items-center justify-center">Oferta</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 5</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 6</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 7</div>
-        <div class="bg-gray-300 w-78 h-68 rounded-lg flex items-center justify-center">foto 8</div>
-        <div class="bg-lime-600 text-white w-78 h-68 rounded-lg flex items-center justify-center">Oferta</div>
-    </div>
+    <section class="p-5">
+      <h2 class="text-2xl font-bold mb-6 text-gray-700">
+        Produtos em Destaque
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+      >
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+          <img src="IMG/71ZHO99E7EL.jpg" alt="" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 1</h3>
+            <p class="text-sm text-gray-600 mb-2">Smartphone com câmera dupla e bateria de longa duração.</p>
+            <span class="text-lime-600 font-bold">R$ 1.299,00</span>
+          </div>
+        </div>
+
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+          <img src="IMG/CGY-0302-108_zoom1.webp" alt="" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 2</h3>
+            <p class="text-sm text-gray-600 mb-2">Bicicleta aro 29, ideal para trilhas e passeios urbanos.</p>
+            <span class="text-lime-600 font-bold">R$ 899,00</span>
+          </div>
+        </div>
+
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+          <img src="IMG/jogo-de-ferramentas-para-oficina-50-pecas-st09508-sata-6616ea10db301.jpg" alt="" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 3</h3>
+            <p class="text-sm text-gray-600 mb-2">Kit de ferramentas com 50 peças para uso doméstico.</p>
+            <span class="text-lime-600 font-bold">R$ 249,00</span>
+          </div>
+        </div>
+
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+          <img src="IMG/sofa_4_lugares_suica_retratil_e_reclinavel_veludo_bege_240cm_5963_1_011162743f1b61e2df062079e20a1f5d.webp" alt="" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 4</h3>
+            <p class="text-sm text-gray-600 mb-2">Sofá retrátil e reclinável, conforto para sua sala.</p>
+            <span class="text-lime-600 font-bold">R$ 2.199,00</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <article class="bg-orange-300 py-10">
+      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+        Ofertas Especiais
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-5"
+      >
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/41LY+YFNjnL._AC_SY900_.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Tênis Esportivo
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Conforto e estilo para corridas e caminhadas.
+            </p>
+            <span class="block"><s>R$ 300,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 199,00</span>
+            <span class="text-sm text-gray-700">20% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/notebook-asus-vivobook-go-15-e1504fa-amd-ryzen-5-7520u-8gb-ram-512gb-ssd-tela-15-6-fhd-keepos-preto-e1504fa-nj732_1727353592_original.webp"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Notebook
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Ideal para trabalho e estudos, 8GB RAM.
+            </p>
+            <span class="block"><s>R$ 4.832,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 2.499,00</span>
+            <span class="text-sm text-gray-700">53% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/furadeira_eletrica_de_impacto_dwd502_2600rpm_710w_amarelo_120v_127v_dewalt_3331_2_137133121058eb8cc879522bb1220700.webp"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Furadeira Elétrica
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Compact e potente para uso doméstico.
+            </p>
+            <span class="block"><s>R$ 430,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 179,00</span>
+            <span class="text-sm text-gray-700">60% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/mesa_de_jantar_design_com_vidro_160x90_fendi_e_cappuccino_2779_2_b5d476ec06f64beef40309f48a7cdd04.webp"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Mesa de jantar
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Design moderno para até 6 pessoas.
+            </p>
+            <span class="block"><s>R$ 1.500,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 1.299,00</span>
+            <span class="text-sm text-gray-700">15% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/relogio_smartwatch_x_watch_preto_com_alexa_1460_1_acdfd0a488affed854938b88c640670c.webp"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Smartwatch
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Monitoramento de saúde e notificações.
+            </p>
+            <span class="block"><s>R$ 696,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 349,00</span>
+            <span class="text-sm text-gray-700">50% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/GW41.0104-1-1200x1200.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Câmera Digital
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Alta resolução para fotos incríveis.
+            </p>
+            <span class="block"><s>R$ 2.100,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 1.599,00</span>
+            <span class="text-sm text-gray-700">10% de desconto</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+          <img
+            src="IMG/475a320fec629a8349f9050a54f3fe64-qkhidhmcqw.webp"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Churrasqueira Portátil
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Perfeita para encontros ao ar livre.
+            </p>
+            <span class="block"><s>R$ 1.500,00</s></span>
+            <span class="text-lime-600 font-bold">R$ 499,00</span>
+            <span class="text-sm text-gray-700">70% de desconto</span>
+          </div>
+        </div>
+
+      </div>
     </article>
 
-    <footer class="bg-lime-600 h-68 flex items-center justify-center">
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-      <a href="#"></a>
+    <footer class="bg-lime-600 text-white py-6 mt-10">
+      <div class="flex justify-center space-x-8">
+        <a href="#sobre" class="hover:text-orange-300 transition">Sobre</a>
+        <a href="#contato" class="hover:text-orange-300 transition">Contato</a>
+        <a href="#" class="hover:text-orange-300 transition">Ajuda</a>
+      </div>
+      <p class="text-center mt-4 text-sm">
+        © 2026 Bugio's Market - Todos os direitos reservados
+      </p>
     </footer>
   </body>
 </html>
