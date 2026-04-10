@@ -7,58 +7,38 @@
     <title>Bugio's Market</title>
   </head>
   <body class="bg-gray-100 font-sans">
-    <nav
-      class="flex justify-between items-center p-4 bg-lime-600 text-white shadow-md"
-    >
-      <div class="text-2xl font-extrabold tracking-wide">Bugio's Market</div>
-      <ul class="flex space-x-6">
-        <li>
-          <a href="#veiculos" class="hover:text-orange-300 transition"
-            >Veículos</a
-          >
-        </li>
-        <li>
-          <a href="#tecnologia" class="hover:text-orange-300 transition"
-            >Tecnologia</a
-          >
-        </li>
-        <li>
-          <a href="#ferramentas" class="hover:text-orange-300 transition"
-            >Ferramentas</a
-          >
-        </li>
-        <li>
-          <a href="#casaMoveis" class="hover:text-orange-300 transition"
-            >Casa e Móveis</a
-          >
-        </li>
-        <li>
-          <a href="#esportes" class="hover:text-orange-300 transition"
-            >Esportes</a
-          >
-        </li>
-      </ul>
+    <nav class="bg-lime-600 text-white shadow-md">
+      <div class="container mx-auto px-4 flex items-center justify-between p-4">
+        <div class="flex items-center">
+          <div class="text-2xl font-extrabold tracking-wide">Bugio's Market</div>
+        </div>
+
+        <ul class="hidden md:flex space-x-6 md:items-center">
+          <li>
+            <a href="tecnologia.html" class="hover:text-orange-300 transition">Tecnologia</a>
+          </li>
+          <li>
+            <a href="ferramentas.html" class="hover:text-orange-300 transition">Ferramentas</a>
+          </li>
+          <li>
+            <a href="CasaMoveis.html" class="hover:text-orange-300 transition">Casa e Móveis</a>
+          </li>
+          <li>
+            <a href="esportes.html" class="hover:text-orange-300 transition">Esportes</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- <div class="w-full h-64 bg-cover bg-center mb-10" style="background-image: url('bugio.png');">
-      <div class="flex items-center justify-center h-full bg-black bg-opacity-40">
-        <h1 class="text-white text-4xl font-bold">Bem-vindo ao Bugio's Market</h1>
-      </div>
-    </div> -->
-
-    <!-- <div>
-      <img src="Bugio3.png" alt="" class="w-full h-screen">
-    </div>  -->
-
-    <section class="p-5">
+    <section class="container mx-auto px-4 p-5">
       <h2 class="text-2xl font-bold mb-6 text-gray-700">
         Produtos em Destaque
       </h2>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
-          <img src="IMG/71ZHO99E7EL.jpg" alt="" class="w-full h-48 object-cover">
+          <div>
+          <img src="IMG/71ZHO99E7EL.jpg" alt="" class="w-full h-full object-cover">
+          </div>
           <div class="p-6">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 1</h3>
             <p class="text-sm text-gray-600 mb-2">Smartphone com câmera dupla e bateria de longa duração.</p>
@@ -67,7 +47,9 @@
         </div>
 
          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
-          <img src="IMG/CGY-0302-108_zoom1.webp" alt="" class="w-full h-48 object-cover">
+          <div>
+          <img src="IMG/CGY-0302-108_zoom1.webp" alt="" class="w-full h-full object-cover">
+          </div>
           <div class="p-6">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 2</h3>
             <p class="text-sm text-gray-600 mb-2">Bicicleta aro 29, ideal para trilhas e passeios urbanos.</p>
@@ -76,7 +58,9 @@
         </div>
 
          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
-          <img src="IMG/jogo-de-ferramentas-para-oficina-50-pecas-st09508-sata-6616ea10db301.jpg" alt="" class="w-full h-48 object-cover">
+          <div>
+          <img src="IMG/jogo-de-ferramentas-para-oficina-50-pecas-st09508-sata-6616ea10db301.jpg" alt="" class="w-full h-full object-cover">
+          </div>
           <div class="p-6">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 3</h3>
             <p class="text-sm text-gray-600 mb-2">Kit de ferramentas com 50 peças para uso doméstico.</p>
@@ -85,7 +69,9 @@
         </div>
 
          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
-          <img src="IMG/sofa_4_lugares_suica_retratil_e_reclinavel_veludo_bege_240cm_5963_1_011162743f1b61e2df062079e20a1f5d.webp" alt="" class="w-full h-48 object-cover">
+          <div>
+          <img src="IMG/sofa_4_lugares_suica_retratil_e_reclinavel_veludo_bege_240cm_5963_1_011162743f1b61e2df062079e20a1f5d.webp" alt="" class="w-full h-full object-cover">
+          </div>
           <div class="p-6">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Produto 4</h3>
             <p class="text-sm text-gray-600 mb-2">Sofá retrátil e reclinável, conforto para sua sala.</p>
@@ -96,22 +82,22 @@
       </div>
     </section>
 
-    <article class="bg-orange-300 py-10">
+    <article class="container mx-auto px-4 bg-orange-300 py-10">
       <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
         Ofertas Especiais
       </h2>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-5"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-5">
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/41LY+YFNjnL._AC_SY900_.jpg"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
-          <div class="p-4">
+          </div>
+          <div class="p-4 pt-25">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Tênis Esportivo
             </h3>
@@ -127,11 +113,13 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/notebook-asus-vivobook-go-15-e1504fa-amd-ryzen-5-7520u-8gb-ram-512gb-ssd-tela-15-6-fhd-keepos-preto-e1504fa-nj732_1727353592_original.webp"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Notebook
@@ -148,17 +136,19 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/furadeira_eletrica_de_impacto_dwd502_2600rpm_710w_amarelo_120v_127v_dewalt_3331_2_137133121058eb8cc879522bb1220700.webp"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Furadeira Elétrica
             </h3>
             <p class="text-sm text-gray-600 mb-2">
-              Compact e potente para uso doméstico.
+              Compacto e potente para uso doméstico.
             </p>
             <span class="block"><s>R$ 430,00</s></span>
             <span class="text-lime-600 font-bold">R$ 179,00</span>
@@ -169,11 +159,13 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/mesa_de_jantar_design_com_vidro_160x90_fendi_e_cappuccino_2779_2_b5d476ec06f64beef40309f48a7cdd04.webp"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Mesa de jantar
@@ -190,11 +182,13 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/relogio_smartwatch_x_watch_preto_com_alexa_1460_1_acdfd0a488affed854938b88c640670c.webp"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Smartwatch
@@ -211,11 +205,13 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+          <div>
           <img
             src="IMG/GW41.0104-1-1200x1200.jpg"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Câmera Digital
@@ -232,11 +228,13 @@
         <div
           class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
         >
+        <div>
           <img
             src="IMG/475a320fec629a8349f9050a54f3fe64-qkhidhmcqw.webp"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-full h-full object-cover"
           />
+          </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
               Churrasqueira Portátil
@@ -254,14 +252,16 @@
     </article>
 
     <footer class="bg-lime-600 text-white py-6 mt-10">
-      <div class="flex justify-center space-x-8">
-        <a href="#sobre" class="hover:text-orange-300 transition">Sobre</a>
-        <a href="#contato" class="hover:text-orange-300 transition">Contato</a>
-        <a href="#" class="hover:text-orange-300 transition">Ajuda</a>
+      <div class="container mx-auto px-4 flex flex-col justify-center items-center">
+        <div class="flex space-x-8 mb-4 md:mb-0">
+          <a href="#sobre" class="hover:text-orange-300 transition">Sobre</a>
+          <a href="#contato" class="hover:text-orange-300 transition">Contato</a>
+          <a href="#" class="hover:text-orange-300 transition">Ajuda</a>
+        </div>
+        <p class="text-center md:text-right text-sm">
+          © 2026 Bugio's Market - Todos os direitos reservados
+        </p>
       </div>
-      <p class="text-center mt-4 text-sm">
-        © 2026 Bugio's Market - Todos os direitos reservados
-      </p>
     </footer>
   </body>
 </html>
