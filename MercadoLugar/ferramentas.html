@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bugio's Market</title>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <nav class="bg-lime-600 text-white shadow-md">
+      <div class="container mx-auto px-4 flex items-center justify-between p-4">
+        <div class="flex items-center">
+          <div class="text-2xl font-extrabold tracking-wide hover:text-orange-300 transition"><a href="market.html">Bugio's Market</a></div>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
+            <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <ul id="mobile-menu" class="hidden md:flex space-x-6 md:items-center">
+          <li>
+            <a href="tecnologia.html" class="hover:text-orange-300 transition">Tecnologia</a>
+          </li>
+          <li>
+            <a href="ferramentas.html" class="hover:text-orange-300 transition">Ferramentas</a>
+          </li>
+          <li>
+            <a href="CasaMoveis.html" class="hover:text-orange-300 transition">Casa e Móveis</a>
+          </li>
+          <li>
+            <a href="esportes.html" class="hover:text-orange-300 transition">Esportes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <article class="container mx-auto px-4 bg-orange-300 py-10">
+      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+        Ferramentas
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-5">
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+        <div>
+          <img
+            src="IMG/292330-8.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Chave de Fenda
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Chave confiavel e precisa.
+            </p>
+            <span class="text-lime-600 font-bold">R$ 99,00</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+        <div>
+          <img
+            src="IMG/51MGPcAcbUL._AC_UF894,1000_QL80_.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Alicate
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Ideal para cortes.
+            </p>
+            <span class="text-lime-600 font-bold">R$ 80,00</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+        >
+        <div>
+          <img
+            src="IMG/267270.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Martelo
+            </h3>
+            <p class="text-sm text-gray-600 mb-2">
+              Ideal para quebrar coisas.
+            </p>
+            <span class="text-lime-600 font-bold">R$ 179,00</span>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <footer class="bg-lime-600 text-white py-6 mt-10">
+      <div class="container mx-auto px-4 flex flex-col justify-center items-center">
+        <div class="flex space-x-8 mb-4 md:mb-0">
+          <a href="#sobre" class="hover:text-orange-300 transition">Sobre</a>
+          <a href="#contato" class="hover:text-orange-300 transition">Contato</a>
+          <a href="#" class="hover:text-orange-300 transition">Ajuda</a>
+        </div>
+        <p class="text-center md:text-right text-sm">
+          © 2026 Bugio's Market - Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+    <script>
+      (function(){
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+        if(!btn || !menu) return;
+        btn.addEventListener('click', function(){
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!expanded));
+          menu.classList.toggle('hidden');
+          iconOpen.classList.toggle('hidden');
+          iconClose.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => {
+          if(window.innerWidth < 768){
+            menu.classList.add('hidden');
+            btn.setAttribute('aria-expanded','false');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+          }
+        }));
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Área de login</title>
+</head>
+<body class="bg-red-100">
+    <header class="bg-cyan-700 font-sans text-white">
+        <div class="container mx-auto px-4 flex items-center justify-center p-4">
+            <div class="text-7xl font-extrabold tracking-wide">Senac Wedding</div>
+        </div>
+        </header>
+       
+        <main class="m-8 container flex justify-center mx-auto px-4 bg-cyan-700 py-50 rounded-xl text-center">
+            <form class="bg-white border p-5 rounded-3xl">
+
+            <label class="mt-4 font-bold block" for="nomeLogin">Nome:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="nomeLogin" name="nomeLogin" required>
+
+            <label class="mt-4 font-bold block" for="emailLogin">E-mail:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="email" id="emailLogin" name="emailLogin" required>
+            <div>
+            <button class="mt-6 w-max p-3 bg-red-400 text-white rounded-2xl text-base cursor-pointer hover:scale-105 transition" type="submit">Entrar</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

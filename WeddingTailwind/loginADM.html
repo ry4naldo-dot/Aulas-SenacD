@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login do Administrador</title>
+</head>
+<body class="bg-red-100">
+    <header class="bg-cyan-700 font-sans text-white">
+        <div class="container mx-auto px-4 flex items-center justify-center p-4">
+            <div class="text-7xl font-extrabold tracking-wide">Senac Wedding</div>
+        </div>
+        </header>
+       
+        <main class="m-8 container flex justify-center mx-auto px-4 bg-cyan-700 py-50 rounded-xl text-center">
+            <div>
+            <h2 class="text-2xl font-bold mb-6 text-center text-white">Login Administrativo</h2>
+            <section class="bg-white p-8 mb-8 rounded-3xl shadow-md">
+            <form class="bg-white border p-5 rounded-3xl">
+
+            <label class="mt-4 font-bold block" for="nomeAdmin">Nome:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="nomeAdmin" name="nomeAdmin" required>
+
+            <label class="mt-4 font-bold block" for="emailAdmin">E-mail:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="email" id="emailAdmin" name="emailAdmin" required>
+
+            <label class="mt-4 font-bold block" for="cpfAdmin">CPF:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="cpfAdmin" name="cpfAdmin" maxlength="11" required>
+
+            <label class="mt-4 font-bold block" for="senhaAdmin">Senha:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="password" id="senhaAdmin" name="senhaAdmin" maxlength="16" required>
+
+            <div>
+            <button class="mt-6 w-max p-3 bg-red-400 text-white rounded-2xl text-base cursor-pointer hover:scale-105 transition" type="submit">Cadastrar</button>
+            </div>
+        </form>
+            </section>
+            </div>
+    </main>
+</body>
+</html>

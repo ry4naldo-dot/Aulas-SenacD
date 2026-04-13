@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Área de check-in</title>
+</head>
+<body class="bg-red-100">
+    <header class="bg-cyan-700 font-sans text-white">
+        <div class="container mx-auto px-4 flex items-center justify-center p-4">
+            <div class="text-7xl font-extrabold tracking-wide">Senac Wedding</div>
+        </div>
+        </header>
+       
+        <main class="m-8 container flex justify-center mx-auto px-4 bg-cyan-700 py-50 rounded-xl text-center">
+            <div>
+            <h2 class="text-2xl font-bold mb-6 text-center text-white">Cadastro dos convidados</h2>
+            <section class="bg-white p-8 mb-8 rounded-3xl shadow-md">
+            <form class="bg-white border p-5 rounded-3xl">
+
+            <label class="mt-4 font-bold block" for="nomeConvidado">Nome:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="nomeConvidado" name="nomeConvidado" required>
+
+            <label class="mt-4 font-bold block" for="sobrenomeConvidado">Sobrenome:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="sobrenomeConvidado" name="sobrenomeConvidado" required>
+
+            <label class="mt-4 font-bold block" for="emailConvidado">E-mail:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="email" id="emailConvidado" name="emailConvidado" required>
+
+            <label class="mt-4 font-bold block" for="telefoneConvidado">Telefone:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="tel" name="telefoneConvidado" id="telefoneConvidado" required>
+
+            <label class="mt-4 font-bold block" for="mesaConvidado">Mesa:</label>
+            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="number" id="mesaConvidado" name="mesaConvidado" min="1" max="20">
+
+            <label class="mt-4 font-bold block" for="situacaoConvidado">Situação:</label>
+            <select class="w-max p-3 mt-2 border-2 border-solid border-gray-800" id="situacaoConvidado" name="situacaoConvidado">
+                    <option value="presente">Presente</option>
+                    <option value="ausente">Ausente</option>
+                </select>
+
+            <div>
+            <button class="mt-6 w-max p-3 bg-red-400 text-white rounded-2xl text-base cursor-pointer hover:scale-105 transition" type="submit">Cadastrar</button>
+            </div>
+        </form>
+            </section>
+            </div>
+    </main>
+</body>
+</html>
