@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Área de check-in</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Área de Check-in</title>
 </head>
-<body class="bg-red-100">
-    <header class="bg-cyan-700 font-sans text-white">
-        <div class="container mx-auto px-4 flex items-center justify-center p-4">
-            <div class="text-7xl font-extrabold tracking-wide">Senac Wedding</div>
+<body class="bg-gray-200 min-h-screen flex flex-col">
+
+  <header class="bg-cyan-700 text-white shadow-lg">
+    <div class="container mx-auto px-4 flex items-center justify-center py-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-wide">Senac Wedding</h1>
+    </div>
+  </header>
+
+  <main class="flex-grow flex items-center justify-center px-4">
+    <section class="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-lg">
+      <h2 class="text-2xl font-bold mb-6 text-center text-cyan-700">Cadastro dos Convidados</h2>
+
+      <form class="space-y-4">
+
+        <div>
+          <label class="font-semibold block text-left" for="nomeConvidado">Nome:</label>
+          <input class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                 type="text" id="nomeConvidado" name="nomeConvidado" required>
         </div>
-        </header>
-       
-        <main class="m-8 container flex justify-center mx-auto px-4 bg-cyan-700 py-50 rounded-xl text-center">
-            <div>
-            <h2 class="text-2xl font-bold mb-6 text-center text-white">Cadastro dos convidados</h2>
-            <section class="bg-white p-8 mb-8 rounded-3xl shadow-md">
-            <form class="bg-white border p-5 rounded-3xl">
 
-            <label class="mt-4 font-bold block" for="nomeConvidado">Nome:</label>
-            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="nomeConvidado" name="nomeConvidado" required>
+        <div>
+          <label class="font-semibold block text-left" for="sobrenomeConvidado">Sobrenome:</label>
+          <input class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                 type="text" id="sobrenomeConvidado" name="sobrenomeConvidado" required>
+        </div>
 
-            <label class="mt-4 font-bold block" for="sobrenomeConvidado">Sobrenome:</label>
-            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="text" id="sobrenomeConvidado" name="sobrenomeConvidado" required>
+        <div>
+          <label class="font-semibold block text-left" for="emailConvidado">E-mail:</label>
+          <input class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                 type="email" id="emailConvidado" name="emailConvidado" required>
+        </div>
 
-            <label class="mt-4 font-bold block" for="emailConvidado">E-mail:</label>
-            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="email" id="emailConvidado" name="emailConvidado" required>
+        <div>
+          <label class="font-semibold block text-left" for="telefoneConvidado">Telefone:</label>
+          <input class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                 type="tel" id="telefoneConvidado" name="telefoneConvidado" required>
+        </div>
 
-            <label class="mt-4 font-bold block" for="telefoneConvidado">Telefone:</label>
-            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="tel" name="telefoneConvidado" id="telefoneConvidado" required>
+        <div>
+          <label class="font-semibold block text-left" for="mesaConvidado">Mesa:</label>
+          <input class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                 type="number" id="mesaConvidado" name="mesaConvidado" min="1" max="20">
+        </div>
 
-            <label class="mt-4 font-bold block" for="mesaConvidado">Mesa:</label>
-            <input class="w-max p-3 mt-2 border-2 border-solid border-gray-800" type="number" id="mesaConvidado" name="mesaConvidado" min="1" max="20">
+        <div>
+          <label class="font-semibold block text-left" for="situacaoConvidado">Situação:</label>
+          <select class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-700" 
+                  id="situacaoConvidado" name="situacaoConvidado">
+            <option value="presente">Presente</option>
+            <option value="ausente">Ausente</option>
+          </select>
+        </div>
 
-            <label class="mt-4 font-bold block" for="situacaoConvidado">Situação:</label>
-            <select class="w-max p-3 mt-2 border-2 border-solid border-gray-800" id="situacaoConvidado" name="situacaoConvidado">
-                    <option value="presente">Presente</option>
-                    <option value="ausente">Ausente</option>
-                </select>
+        <div class="flex flex-col gap-4 mt-6">
+         
+          <button class="w-full p-3 bg-red-400 text-white rounded-xl text-lg font-semibold cursor-pointer hover:bg-red-500 transition" type="submit">
+            Cadastrar
+          </button>
 
-            <div>
-            <button class="mt-6 w-max p-3 bg-red-400 text-white rounded-2xl text-base cursor-pointer hover:scale-105 transition" type="submit">Cadastrar</button>
-            </div>
-        </form>
-            </section>
-            </div>
-    </main>
+          <!-- Botão exclusivo para admin -->
+          <!-- <button class="w-full p-3 bg-cyan-700 text-white rounded-xl text-lg font-semibold cursor-pointer hover:bg-cyan-800 transition" type="button">
+            Cadastrar como Admin
+          </button> -->
+        </div>
+
+      </form>
+    </section>
+  </main>
+
 </body>
 </html>

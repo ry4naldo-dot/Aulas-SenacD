@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <link rel="icon" href="imgs/saborIcone.png" type="icon" />
+    <title>Sabor&Mesa</title>
+  </head>
+  <body class="bg-white dark:bg-slate-800">
+    <header
+      class="bg-gradient-to-r from-green-600 to-pink-400 text-white shadow-lg dark:bg-gradient-to-r dark:from-green-900 to dark:bg-pink-800"
+    >
+      <div
+        class="container mx-auto px-4 flex items-center justify-between py-6"
+      >
+        <h1 class="text-5xl font-extrabold tracking-wide dark:text-yellow-600">
+          Sabor<button id="toggleBtn" class="hover:scale-150 transition">
+            &</button
+          >Mesa
+        </h1>
+        <nav class="text-white p-4 dark:text-yellow-600">
+          <div class="flex justify-end">
+            <button id="menuBtn" class="text-2xl">☰</button>
+            <ul id="mobileMenu" class="flex -ml-40 hidden">
+              <li><a href="#" class="p-2 hover:underline">Sobre</a></li>
+              <li><a href="#" class="p-2 hover:underline">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-grow flex items-center justify-center min-h-screen px-4">
+      <section
+        class="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-lg dark:bg-black"
+      >
+        <h2 class="text-2xl font-bold mb-6 text-center text-green-700">
+          Cadastro dos Clientess
+        </h2>
+
+        <form class="space-y-4">
+          <div>
+            <label
+              class="font-semibold block text-left dark:text-white"
+              for="nomeClientes"
+              >Nome:</label
+            >
+            <input
+              class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-700 dark:bg-gray-500 dark:text-white"
+              type="text"
+              id="nomeClientes"
+              name="nomeClientes"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="font-semibold block text-left dark:text-white"
+              for="sobrenomeClientes"
+              >Sobrenome:</label
+            >
+            <input
+              class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-700 dark:bg-gray-500 dark:text-white"
+              type="text"
+              id="sobrenomeClientes"
+              name="sobrenomeClientes"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="font-semibold block text-left dark:text-white"
+              for="emailClientes"
+              >E-mail:</label
+            >
+            <input
+              class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-700 dark:bg-gray-500 dark:text-white"
+              type="email"
+              id="emailClientes"
+              name="emailClientes"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="font-semibold block text-left dark:text-white"
+              for="telefoneClientes"
+              >Telefone:</label
+            >
+            <input
+              class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-700 dark:bg-gray-500 dark:text-white"
+              type="tel"
+              id="telefoneClientes"
+              name="telefoneClientes"
+              required
+            />
+          </div>
+
+          <div>
+            <label
+              class="font-semibold block text-left dark:text-white"
+              for="dataClientes"
+              >Data de Nascimento:</label
+            >
+            <input
+              class="w-full p-3 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-700 dark:bg-gray-500 dark:text-white"
+              type="date"
+              id="dataClientes"
+              name="dataClientes"
+            />
+          </div>
+
+          <div class="flex flex-col gap-4 mt-6">
+            <button
+              class="w-full p-3 bg-red-400 text-white rounded-xl text-lg font-semibold cursor-pointer hover:bg-red-500 transition dark:bg-pink-900 dark:hover:bg-red-800"
+              type="submit"
+            >
+              Cadastrar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="flex text-center justify-center bg-gradient-to-r from-green-600 to-pink-400 py-5 dark:bg-gradient-to-r dark:from-green-900 to dark:bg-pink-800 dark:text-white"
+    >
+      &copy;Sabor & Mesa 2026
+    </footer>
+    <script src="js/scriptdark.js"></script>
+    <script src="js/scriptburg.js"></script>
+  </body>
+</html>

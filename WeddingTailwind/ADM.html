@@ -1,50 +1,81 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Área Administrativa</title>
-  </head>
-  <body class="bg-red-100">
-    <header class="bg-cyan-700 font-sans text-white">
-      <div class="container mx-auto px-4 flex items-center justify-center p-4">
-        <div class="text-7xl font-extrabold tracking-wide">Senac Wedding</div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Área Administrativa</title>
+</head>
+<body class="bg-gradient-to-r from-red-100 to-pink-200 min-h-screen flex flex-col">
 
-    <main
-      class="m-8 container flex justify-center mx-auto px-4 bg-cyan-700 py-50 rounded-xl text-center"
-    >
-      <div>
-        <h2 class="text-2xl font-bold mb-6 text-center text-white">
-          Check-in dos Convidados
-        </h2>
-        <section class="bg-white p-8 mb-8 rounded-3xl shadow-md">
-          <table class="w-max border border-solid border-black">
-            <tr class="border border-solid border-black">
-              <th class="border border-solid border-black">Nome</th>
-              <th class="border border-solid border-black">Email</th>
-              <th class="border border-solid border-black">Telefone</th>
+  <!-- Cabeçalho -->
+  <header class="bg-cyan-700 text-white shadow-lg">
+    <div class="container mx-auto px-4 flex items-center justify-center py-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-wide">Senac Wedding</h1>
+    </div>
+  </header>
+
+  <!-- Área principal -->
+  <main class="flex-grow flex justify-center px-4 py-10">
+    <div class="w-full max-w-4xl">
+      <h2 class="text-2xl font-bold mb-6 text-center text-white">Check-in dos Convidados</h2>
+
+      <section class="bg-white p-8 rounded-3xl shadow-2xl">
+        <!-- Tabela -->
+        <table class="w-full border-collapse border border-gray-300 text-center">
+          <thead class="bg-cyan-700 text-white">
+            <tr>
+              <th class="border border-gray-300 p-3">Nome</th>
+              <th class="border border-gray-300 p-3">Email</th>
+              <th class="border border-gray-300 p-3">Telefone</th>
+              <th class="border border-gray-300 p-3">Situação</th>
             </tr>
-            <tr class="border border-solid border-black">
-              <td class="border border-solid border-black">Ryan</td>
-              <td class="border border-solid border-black">ryan@gmail.com</td>
-              <td class="border border-solid border-black">51994566756</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-3">Ryan</td>
+              <td class="border border-gray-300 p-3">ryan@gmail.com</td>
+              <td class="border border-gray-300 p-3">51994566756</td>
+              <td class="border border-gray-300 p-3 situacao">Presente</td>
             </tr>
-            <tr class="border border-solid border-black">
-              <td class="border border-solid border-black">Carlos</td>
-              <td class="border border-solid border-black">Carlinhos@gmail.com</td>
-              <td class="border border-solid border-black">51987654329</td>
+            <tr>
+              <td class="border border-gray-300 p-3">Carlos</td>
+              <td class="border border-gray-300 p-3">Carlinhos@gmail.com</td>
+              <td class="border border-gray-300 p-3">51987654329</td>
+              <td class="border border-gray-300 p-3 situacao">Ausente</td>
             </tr>
-             <tr class="border border-solid border-black">
-              <td class="border border-solid border-black">Douglas</td>
-              <td class="border border-solid border-black">Remix@gmail.com</td>
-              <td class="border border-solid border-black">51987654329</td>
+            <tr>
+              <td class="border border-gray-300 p-3">Douglas</td>
+              <td class="border border-gray-300 p-3">Remix@gmail.com</td>
+              <td class="border border-gray-300 p-3">51987654329</td>
+              <td class="border border-gray-300 p-3 situacao">Presente</td>
             </tr>
-          </table>
-        </section>
-      </div>
-    </main>
-  </body>
+          </tbody>
+        </table>
+
+        <!-- Contador -->
+        <div class="mt-6 text-center">
+          <p class="text-lg font-semibold text-cyan-700">
+            Total de convidados presentes: <span id="contadorPresente">0</span>
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Script para contar os presentes -->
+  <script>
+    function contarPresentes() {
+      const situacoes = document.querySelectorAll(".situacao");
+      let presentes = 0;
+      situacoes.forEach(s => {
+        if (s.textContent.trim().toLowerCase() === "presente") {
+          presentes++;
+        }
+      });
+      document.getElementById("contadorPresente").textContent = presentes;
+    }
+    contarPresentes();
+  </script>
+</body>
 </html>

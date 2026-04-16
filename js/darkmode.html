@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="transition-colors duration-300">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+
+<body
+    class="min-h-screen flex items-center justify-center bg-white 
+    text-black dark:bg-gray-900 dark:text-white font-sans">
+    <div class="text-center space-y-6 p-6">
+        <h1 class="text-3xl font-bold">Exemplo de Dark Mode</h1>
+        <p class="text-lg">Exemplo pratico de Dark Mode!</p>
+        <button id="toggleBtn"
+            class="px-6 py-3 bg-blue-600 text-white rounded-lg
+             shadow hover:bg-blue-800 transition-colors duration-300">
+            Alternar Tema
+        </button>
+    </div>
+
+    <script src="scriptDark.js"></script>
+
+
+</body>
+
+</html>

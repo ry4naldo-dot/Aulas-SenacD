@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="transition-colors duration-300">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+
+
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="mx-auto flex justify-between items-center">
+
+            <h1 class="text-xl font-bold">Senac</h1>
+
+            <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+            <!-- Menu tela tablet ou maior! -->
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Sobre</a></li>
+                <li><a href="#" class="hover:underline">Cursos</a></li>
+                <li><a href="#" class="hover:underline">Contato</a></li>
+            </ul>
+        </div>
+        <!-- menu mobile, vai aparecer apenas quando houver o click! -->
+        <ul id="mobileMenu" class="hidden flex-col mt-4 space-y-2 md:hidden">
+            <li><a href="#" class="block p-2 bg-blue-500 rounded">Home</a></li>
+            <li><a href="#" class="block p-2 bg-blue-500 rounded">Sobre</a></li>
+            <li><a href="#" class="block p-2 bg-blue-500 rounded">Cursos</a></li>
+            <li><a href="#" class="block p-2 bg-blue-500 rounded">Contato</a></li>
+        </ul>
+
+    </nav>
+
+
+    <script src="scriptBuguer.js"></script>
+
+
+
+</body>
+
+</html>

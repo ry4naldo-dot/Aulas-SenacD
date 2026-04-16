@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <link rel="icon" href="IMG/mamago.png" type="icon">
     <title>Bugio's Market</title>
   </head>
-  <body class="bg-gray-100 font-sans">
-    <nav class="bg-lime-600 text-white shadow-md">
+  <body class="bg-gray-100 font-sans dark:bg-gray-900">
+    <nav class="bg-lime-600 text-white shadow-md dark:bg-lime-800">
       <div class="container mx-auto px-4 flex items-center justify-between p-4">
         <div class="flex items-center">
           <div class="text-2xl font-extrabold tracking-wide">Bugio's Market</div>
         </div>
-        
+
+        <button id="toggleBtn"
+            class="px-3 py-2 bg-white text-black rounded-lg
+             shadow hover:bg-gray-300 transition-colors duration-300">
+        </button>
+
         <div class="md:hidden">
           <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
             <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,50 +54,50 @@
     </nav>
 
     <section class="container mx-auto px-4 p-5">
-      <h2 class="text-2xl font-bold mb-6 text-gray-700">
+      <h2 class="text-2xl font-bold mb-6 text-gray-700 dark:text-gray-200">
         Produtos em Destaque
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black">
           <div>
           <img src="IMG/71ZHO99E7EL.jpg" alt="" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Smartphone</h3>
-            <p class="text-sm text-gray-600 mb-2">Smartphone com câmera dupla e bateria de longa duração.</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Smartphone</h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">Smartphone com câmera dupla e bateria de longa duração.</p>
             <span class="text-lime-600 font-bold">R$ 1.299,00</span>
           </div>
         </div>
 
-         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black">
           <div>
           <img src="IMG/CGY-0302-108_zoom1.webp" alt="" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Bicicleta</h3>
-            <p class="text-sm text-gray-600 mb-2">Bicicleta aro 29, ideal para trilhas e passeios urbanos.</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Bicicleta</h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">Bicicleta aro 29, ideal para trilhas e passeios urbanos.</p>
             <span class="text-lime-600 font-bold">R$ 899,00</span>
           </div>
         </div>
 
-         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black">
           <div>
           <img src="IMG/jogo-de-ferramentas-para-oficina-50-pecas-st09508-sata-6616ea10db301.jpg" alt="" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Kit de ferramentas</h3>
-            <p class="text-sm text-gray-600 mb-2">Kit de ferramentas com 50 peças para uso doméstico.</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Kit de ferramentas</h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">Kit de ferramentas com 50 peças para uso doméstico.</p>
             <span class="text-lime-600 font-bold">R$ 249,00</span>
           </div>
         </div>
 
-         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+         <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black">
           <div>
           <img src="IMG/sofa_4_lugares_suica_retratil_e_reclinavel_veludo_bege_240cm_5963_1_011162743f1b61e2df062079e20a1f5d.webp" alt="" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Sofá</h3>
-            <p class="text-sm text-gray-600 mb-2">Sofá retrátil e reclinável, conforto para sua sala.</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Sofá</h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">Sofá retrátil e reclinável, conforto para sua sala.</p>
             <span class="text-lime-600 font-bold">R$ 2.199,00</span>
           </div>
         </div>
@@ -93,36 +105,36 @@
       </div>
     </section>
 
-    <article class="container mx-auto px-4 bg-orange-300 py-10">
-      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+    <article class="container mx-auto px-4 bg-orange-300 py-10 rounded-md dark:bg-orange-600">
+      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">
         Ofertas Especiais
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-5">
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
-            src="IMG/41LY+YFNjnL._AC_SY900_.jpg"
+            src="IMG/tenis_olympikus_esportivo_marte_masculino_preto_18201_2_282f22226ae08a3b614ecf2e11ce76ad.webp"
             alt=""
             class="w-full h-full object-cover"
           />
           </div>
-          <div class="p-4 pt-25">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">
               Tênis Esportivo
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">
               Conforto e estilo para corridas e caminhadas.
             </p>
-            <span class="block"><s>R$ 300,00</s></span>
+            <span class="block dark:text-white"><s>R$ 300,00</s></span>
             <span class="text-lime-600 font-bold">R$ 199,00</span>
-            <span class="text-sm text-gray-700">20% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">20% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
@@ -132,20 +144,20 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">
               Notebook
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">
               Ideal para trabalho e estudos, 8GB RAM.
             </p>
-            <span class="block"><s>R$ 4.832,00</s></span>
+            <span class="block dark:text-white"><s>R$ 4.832,00</s></span>
             <span class="text-lime-600 font-bold">R$ 2.499,00</span>
-            <span class="text-sm text-gray-700">53% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">53% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
@@ -155,20 +167,20 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-300">
               Furadeira Elétrica
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-200">
               Compacto e potente para uso doméstico.
             </p>
-            <span class="block"><s>R$ 430,00</s></span>
+            <span class="block dark:text-white"><s>R$ 430,00</s></span>
             <span class="text-lime-600 font-bold">R$ 179,00</span>
-            <span class="text-sm text-gray-700">60% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">60% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
@@ -178,20 +190,20 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-300">
               Mesa de jantar
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-200">
               Design moderno para até 6 pessoas.
             </p>
-            <span class="block"><s>R$ 1.500,00</s></span>
+            <span class="block dark:text-white"><s>R$ 1.500,00</s></span>
             <span class="text-lime-600 font-bold">R$ 1.299,00</span>
-            <span class="text-sm text-gray-700">15% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">15% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
@@ -201,20 +213,20 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-300">
               Smartwatch
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-200">
               Monitoramento de saúde e notificações.
             </p>
-            <span class="block"><s>R$ 696,00</s></span>
+            <span class="block dark:text-white"><s>R$ 696,00</s></span>
             <span class="text-lime-600 font-bold">R$ 349,00</span>
-            <span class="text-sm text-gray-700">50% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">50% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
           <div>
           <img
@@ -224,20 +236,20 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-300">
               Câmera Digital
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-200">
               Alta resolução para fotos incríveis.
             </p>
-            <span class="block"><s>R$ 2.100,00</s></span>
+            <span class="block dark:text-gray-300"><s>R$ 2.100,00</s></span>
             <span class="text-lime-600 font-bold">R$ 1.599,00</span>
-            <span class="text-sm text-gray-700">10% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">10% de desconto</span>
           </div>
         </div>
 
         <div
-          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
         >
         <div>
           <img
@@ -247,22 +259,22 @@
           />
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-300">
               Churrasqueira Portátil
             </h3>
-            <p class="text-sm text-gray-600 mb-2">
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-200">
               Perfeita para encontros ao ar livre.
             </p>
-            <span class="block"><s>R$ 1.500,00</s></span>
+            <span class="block dark:text-white"><s>R$ 1.500,00</s></span>
             <span class="text-lime-600 font-bold">R$ 499,00</span>
-            <span class="text-sm text-gray-700">70% de desconto</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">70% de desconto</span>
           </div>
         </div>
 
       </div>
     </article>
 
-    <footer class="bg-lime-600 text-white py-6 mt-10">
+    <footer class="bg-lime-600 text-white py-6 mt-10 dark:bg-lime-800">
       <div class="container mx-auto px-4 flex flex-col justify-center items-center">
         <div class="flex space-x-8 mb-4 md:mb-0">
           <a href="#sobre" class="hover:text-orange-300 transition">Sobre</a>
@@ -274,7 +286,10 @@
         </p>
       </div>
     </footer>
-     <script>
+
+    <script src="script.js"></script>
+
+     <!-- <script>
       (function(){
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
@@ -297,6 +312,6 @@
           }
         }));
       })();
-    </script>
+    </script> -->
   </body>
 </html>
