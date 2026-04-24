@@ -5,12 +5,14 @@
 // converta para quilômetros (considere 1 passo = 0,8 metros). 
 
 
-$passos = readline("Digite quantos passos você deu: \n");
+// $passosSemana = [3000, 5000, 4000, 6000, 7000, 8000, 10000];
 
-$conversorPassos = $passos * 0.8;
+$passosSemana = [];
 
-$diasPassos = $conversorPassos * 7;
+for ($i=0; $i <7; $i++) { 
+    $passosSemana[] = readline("Digite quantos passos você deu no ".($i+1)."º dia: ");
+}
 
-$conversorKM = $diasPassos / 10;
+$totalMetros = array_sum($passosSemana) * 0.8;
+echo "Total em km: " . ($totalMetros / 1000);
 
-echo ("Você percorreu ".$conversorKM."Km em sete dias.");

@@ -4,16 +4,12 @@
 // se a palavra "spam" ou "clickbait" aparece na lista e bloqueie o comentário se 
 // encontrar. 
 
-$lista = ["esse site é mt bom.","isso é clickbait","spam"];
-$palavrasProibidas = ["spam","clickbait"];
-var_dump($lista);
 
-// $busca = readline("Qual palavra deseja bloquear: \n");
-
-if (in_array($palavrasProibidas,$lista)) {
-    echo ("As palavra ".$palavrasProibidas." já foram bloqueadas.\n");
-    unset($lista[$palavrasProibidas]);
-} 
-
-var_dump($lista);
-
+$comentarios = ["ótimo produto", "spam", "clickbait"];
+foreach ($comentarios as $c) {
+    if (strpos($c, "spam") !== false || strpos($c, "clickbait") !== false) {
+        echo "Comentário bloqueado: $c\n";
+    } else {
+        echo "Comentário aprovado: $c\n";
+    }
+}
