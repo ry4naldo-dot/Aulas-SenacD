@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Área Administrativa - Senac Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Senac Wedding</h1>
+        <p>Área do Administrador</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro Administrativo</h2>
+            <form class="formulario">
+                <label for="nomeAdmin">Nome:</label>
+                <input type="text" id="nomeAdmin" name="nomeAdmin" required>
+
+                <label for="emailAdmin">E-mail:</label>
+                <input type="email" id="emailAdmin" name="emailAdmin" required>
+
+                <label for="cpfAdmin">CPF:</label>
+                <input type="text" id="cpfAdmin" name="cpfAdmin" maxlength="11" required>
+
+                <label for="senhaAdmin">Senha:</label>
+                <input type="password" id="senhaAdmin" name="senhaAdmin" maxlength="16" required>
+
+                <label for="funcaoAdmin">Função:</label>
+                <select id="funcaoAdmin" name="funcaoAdmin" required>
+                    <option value="administrador">Administrador</option>
+                    <option value="recepcionista">Recepcionista</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Check-in de Convidados</h2>
+            <form class="formulario">
+                <label for="idConvidado">ID Convidado:</label>
+                <input type="number" id="idConvidado" name="idConvidado" required>
+
+                <label for="idAdminCheckin">ID Administrativo:</label>
+                <input type="number" id="idAdminCheckin" name="idAdminCheckin" required>
+
+                <button type="submit">Registrar Check-in</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

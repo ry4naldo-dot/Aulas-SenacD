@@ -35,23 +35,15 @@ btn.addEventListener('click', () => {
     applyTheme(theme);
 })
 // --Hamburguer--
- const hambbtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
-        if(!hambbtn || !menu) return;
-        hambbtn.addEventListener('click', function(){
-          const expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!expanded));
-          menu.classList.toggle('hidden');
-          iconOpen.classList.toggle('hidden');
-          iconClose.classList.toggle('hidden');
-        });
-        document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => {
-          if(window.innerWidth < 768){
-            menu.classList.add('hidden');
-            hambbtn.setAttribute('aria-expanded','false');
-            iconOpen.classList.remove('hidden');
-            iconClose.classList.add('hidden');
-          }
-        }));
+let hambbtn = document.getElementById('menu-btn');
+let mobileMenu = document.getElementById('mobile-menu');
+
+hambbtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    
+     if (hambbtn.textContent.trim() === "☰") {
+        hambbtn.textContent = "X";
+    } else {
+        hambbtn.textContent = "☰";
+    }
+});

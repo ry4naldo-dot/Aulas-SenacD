@@ -25,18 +25,13 @@
              shadow hover:bg-gray-300 transition-colors duration-300">
         </button>
 
-        <div class="md:hidden">
-          <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
-            <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
+         <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">☰
           </button>
         </div>
 
-        <ul id="mobile-menu" class="hidden md:flex space-x-6 md:items-center">
+
+        <ul id="mobile-menu" class="hidden md:flex md:space-x-6 md:items-center">
           <li>
             <a href="tecnologia.html" class="hover:text-orange-300 transition">Tecnologia</a>
           </li>
@@ -121,6 +116,59 @@
           </div>
         </div>
 
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
+        >
+        <div>
+          <img
+            src="IMG/inglesa.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">
+              Chave Inglesa
+            </h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">
+              Chave inglesa ajustavel.
+            </p>
+            <span class="text-lime-600 font-bold">R$ 699,00</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black"
+        >
+        <div>
+          <img
+            src="IMG/carrinho-de-mao-carriola-45-litros-preto-ca48bbb4-xk60vx27bl.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">
+              Carriola
+            </h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">
+              Ideal para carregar coisas.
+            </p>
+            <span class="text-lime-600 font-bold">R$ 699,00</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition dark:bg-black">
+          <div>
+          <img src="IMG/jogo-de-ferramentas-para-oficina-50-pecas-st09508-sata-6616ea10db301.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Kit de ferramentas</h3>
+            <p class="text-sm text-gray-600 mb-2 dark:text-gray-300">Kit de ferramentas com 50 peças para uso doméstico.</p>
+            <span class="text-lime-600 font-bold">R$ 249,00</span>
+          </div>
+        </div>
+
       </div>
     </article>
 
@@ -137,29 +185,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-      (function(){
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('icon-open');
-        const iconClose = document.getElementById('icon-close');
-        if(!btn || !menu) return;
-        btn.addEventListener('click', function(){
-          const expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!expanded));
-          menu.classList.toggle('hidden');
-          iconOpen.classList.toggle('hidden');
-          iconClose.classList.toggle('hidden');
-        });
-        document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => {
-          if(window.innerWidth < 768){
-            menu.classList.add('hidden');
-            btn.setAttribute('aria-expanded','false');
-            iconOpen.classList.remove('hidden');
-            iconClose.classList.add('hidden');
-          }
-        }));
-      })();
-    </script>
   </body>
 </html>

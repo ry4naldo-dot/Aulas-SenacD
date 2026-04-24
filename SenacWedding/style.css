@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #c94f7c;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 2rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #c94f7c;
+    margin-bottom: 1rem;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    background: #c94f7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+    background: #a63d65;
+}

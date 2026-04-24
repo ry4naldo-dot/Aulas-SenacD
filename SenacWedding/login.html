@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Senac Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Senac Wedding</h1>
+        <p>Área de Login</p>
+    </header>
+
+    <main>
+        <form class="formulario">
+            <label for="emailLogin">E-mail:</label>
+            <input type="email" id="emailLogin" name="emailLogin" required>
+
+            <label for="senhaLogin">Senha:</label>
+            <input type="password" id="senhaLogin" name="senhaLogin" required>
+
+            <label for="perfil">Entrar como:</label>
+            <select id="perfil" name="perfil" required>
+                <option value="administrador">Administrador</option>
+                <option value="recepcionista">Recepcionista</option>
+                <option value="convidado">Convidado</option>
+            </select>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+</body>
+</html>

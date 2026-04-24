@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Área Recepcionista - Senac Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Senac Wedding</h1>
+        <p>Área da Recepção</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro de Convidados</h2>
+            <form class="formulario">
+                <label for="nomeConvidado">Nome:</label>
+                <input type="text" id="nomeConvidado" name="nomeConvidado" required>
+
+                <label for="sobrenomeConvidado">Sobrenome:</label>
+                <input type="text" id="sobrenomeConvidado" name="sobrenomeConvidado" required>
+
+                <label for="emailConvidado">E-mail:</label>
+                <input type="email" id="emailConvidado" name="emailConvidado" required>
+
+                <label for="telefoneConvidado">Telefone:</label>
+                <input type="tel" id="telefoneConvidado" name="telefoneConvidado" required>
+
+                <label for="mesaConvidado">Mesa:</label>
+                <input type="number" id="mesaConvidado" name="mesaConvidado" required>
+
+                <label for="situacaoConvidado">Situação:</label>
+                <select id="situacaoConvidado" name="situacaoConvidado" required>
+                    <option value="presente">Presente</option>
+                    <option value="ausente">Ausente</option>
+                </select>
+
+                <button type="submit">Cadastrar Convidado</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
