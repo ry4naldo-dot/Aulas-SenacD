@@ -40,10 +40,11 @@ let mobileMenu = document.getElementById('mobile-menu');
 
 hambbtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
-    
+
      if (hambbtn.textContent.trim() === "☰") {
         hambbtn.textContent = "X";
     } else {
         hambbtn.textContent = "☰";
     }
+
 });
